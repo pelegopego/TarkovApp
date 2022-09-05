@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.app_tarkov">
+    package="com.app.tarkov_helper">
    <application
         android:label="app_tarkov"
         android:name="${applicationName}"

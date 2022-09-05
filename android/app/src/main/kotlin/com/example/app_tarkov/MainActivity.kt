@@ -1,4 +1,4 @@
-package com.example.app_tarkov
+package com.app.tarkov_helper
 
 import io.flutter.embedding.android.FlutterActivity
 
