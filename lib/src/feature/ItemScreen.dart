@@ -33,6 +33,11 @@ class _ItemScreenState extends State<ItemScreen> {
               onChanged: (value) {
                 searchText = value;
               },
+              onSubmitted: (value) {
+                setState(() {
+                  searchText = value;
+                });
+              },
             )),
             Container(
                 child: IconButton(
