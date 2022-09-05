@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'feature/itemsList.dart';
+import 'feature/Home.dart';
 import 'feature/itemDetail.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
@@ -16,8 +16,6 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           restorationScopeId: 'app',
           onGenerateTitle: (BuildContext context) => 'Tarkov',
-          theme: ThemeData.dark(),
-          darkTheme: ThemeData.dark(),
           onGenerateRoute: (RouteSettings routeSettings) {
             return MaterialPageRoute<void>(
               settings: routeSettings,
@@ -25,9 +23,9 @@ class MyApp extends StatelessWidget {
                 switch (routeSettings.name) {
                   case ItemDetailsView.routeName:
                     return const ItemDetailsView();
-                  case ItemListView.routeName:
+                  case Home.routeName:
                   default:
-                    return const ItemListView();
+                    return const Home();
                 }
               },
             );
